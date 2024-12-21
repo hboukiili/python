@@ -2,7 +2,14 @@ import sys
 import string
 
 def analyze_string(input_string):
-    
+    """
+    Analyzes a string for its character composition and displays:
+    - Number of uppercase letters
+    - Number of lowercase letters
+    - Number of digits
+    - Number of punctuation characters
+    - Number of spaces
+    """
     upper_count = sum(1 for char in input_string if char.isupper())
     lower_count = sum(1 for char in input_string if char.islower())
     digit_count = sum(1 for char in input_string if char.isdigit())
@@ -17,7 +24,9 @@ def analyze_string(input_string):
     print(f"{digit_count} digits")
 
 def main():
-
+    """
+    Main function to handle input validation and prompt the user if necessary.
+    """
     try:
         if len(sys.argv) > 2:
             raise AssertionError("More than one argument is provided")

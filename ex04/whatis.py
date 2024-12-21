@@ -6,7 +6,6 @@ def check_odd_or_even():
 
         if len(sys.argv) == 2:
         
-
             if not sys.argv[1].lstrip("-").isdigit():
                 raise AssertionError("Argument is not an integer")
     

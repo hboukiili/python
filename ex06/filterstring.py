@@ -2,7 +2,9 @@ import sys
 from ft_filter import ft_filter
 
 def main():
- 
+    """
+    Main program to process input arguments and output filtered words.
+    """
     try:
         if len(sys.argv) != 3:
             raise AssertionError("The arguments are bad")
